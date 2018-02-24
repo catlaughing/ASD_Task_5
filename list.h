@@ -29,14 +29,17 @@ typedef struct elmlist *address;
 
 struct elmlist {
     //------------- your code here -----------
-
+    address prev;
+    infotype info;
+    address next;
 
     //----------------------------------------
 };
 
 struct List {
     //------------- your code here -----------
-
+    address First;
+    address Last;
     //----------------------------------------
 };
 
@@ -58,3 +61,4 @@ address findElmByName(List, infotype );
 
 
 #endif // LIST_H_INCLUDED
+
